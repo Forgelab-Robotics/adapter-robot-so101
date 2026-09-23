@@ -1,0 +1,9 @@
+# 主动臂 (Master) 配置文件
+# 用于采集手部动作，必须设置为非从动模式
+
+# 串口路径：根据实际连接的端口修改 (如 /dev/ttyACM1)
+port: /dev/ttyACM1 
+
+# 是否为从臂模式：设为 false
+# 这将触发 driver.py 中的 self.set_torque(False)，使电机掉电，方便手掰示教
+is_follower: false

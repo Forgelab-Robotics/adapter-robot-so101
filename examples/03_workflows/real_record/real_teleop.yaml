@@ -1,0 +1,20 @@
+nodes:
+  - id: master_arm  # 主动机械臂真机驱动节点
+    path: ../../../src/robots_so101/main.py
+    inputs:
+      tick: dora/timer/millis/20  # 50Hz 读取频率
+    outputs:
+      - state
+    # 加载主臂配置（is_follower: false），自动释放扭矩
+    args: --config master_config.yaml
+
+  - id: slave_arm  # 从动机械臂真机驱动节点
+    path: ../../../src/robots_so101/main.py
+    inputs:
+      tick: dora/timer/millis/20
+      # 将主臂的状态(state)作为动作(action)传给从臂
+      action: master_arm/state
+    outputs:
+      - state
+    # 加载从臂配置（is_follower: true），上电锁定
+    args: --config slave_config.yaml

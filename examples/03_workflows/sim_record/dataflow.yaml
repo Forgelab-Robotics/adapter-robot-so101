@@ -1,0 +1,32 @@
+nodes:
+  - id: so101_real  # 真机驱动节点
+    path: ../../../src/robots_so101/main.py
+    inputs:
+      tick: dora/timer/millis/20  # 50Hz 读取频率
+    outputs:
+      - state
+    args: --config master_config.yaml
+
+  - id: mujoco_sim  # MuJoCo 仿真节点
+    path: ../../../bin/mujoco_sim
+    inputs:
+      tick: dora/timer/millis/20
+      # 将真机的输出连到仿真的新输入 real_state 上
+      robot_0/master_state: so101_real/state
+    outputs:
+      - proprio_state
+      - image/hand
+      - image/left_pillar
+      - image/right_pillar
+      # - image/top
+      # - image/angle 
+    args: --config simulator_so101.yaml
+  
+  - id: image_viewer
+    path: ../../../bin/image_viewer
+    inputs:
+      image/hand: mujoco_sim/image/hand
+      image/left_pillar: mujoco_sim/image/left_pillar
+      image/right_pillar: mujoco_sim/image/right_pillar
+      # image/top: mujoco_sim/image/top
+      # image/angle: mujoco_sim/image/angle

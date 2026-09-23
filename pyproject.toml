@@ -1,0 +1,43 @@
+[project]
+name = "robots-so101"
+version = "0.1.0"
+description = "SO101 Robot configuration and teleop workflow"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE", "THIRD_PARTY_NOTICES.md"]
+authors = [{ name = "PhyAgentOS Contributors" }]
+maintainers = [{ name = "PhyAgentOS Contributors" }]
+keywords = ["robot", "so101", "feetech", "dora", "forge", "robotics"]
+dependencies = [
+	"dora-rs>=0.4.1",
+	"typer>=0.25.1",
+	"mujoco>=3.8.0",
+	"forge-common>=1.0.1,<2",
+	"forge-msgs>=1.0.1,<2",
+	"forge-robot>=1.0.1,<2",
+	"pyserial>=3.5",
+	"opencv-python>=4.13.0.92",
+	"websockets>=16.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Forgelab-Robotics/adapter-robot-so101"
+Documentation = "https://github.com/Forgelab-Robotics/adapter-robot-so101#readme"
+Repository = "https://github.com/Forgelab-Robotics/adapter-robot-so101.git"
+Issues = "https://github.com/Forgelab-Robotics/adapter-robot-so101/issues"
+
+[project.scripts]
+robots-so101 = "robots_so101.main:main"
+robots_so101 = "robots_so101.main:main"
+
+[project.optional-dependencies]
+pyinstaller = ["pyinstaller>=6.0"]
+test = ["pytest>=8"]
+
+[build-system]
+requires = ["uv_build>=0.8.17,<0.9.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "robots_so101"

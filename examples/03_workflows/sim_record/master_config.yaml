@@ -1,0 +1,10 @@
+# SO101 节点配置示例
+# 复制为 config.yaml 并根据实际环境修改
+
+# 串口路径，如 /dev/ttyUSB0、/dev/ttyACM0（可用 list-ports 查看）
+# {"device": "/dev/ttyACM0", "description": "USB Single Serial", "hwid": "USB VID:PID=1A86:55D3 SER=5A7C121231 LOCATION=1-9:1.0"}]}
+#python3 -m serial.tools.list_ports
+port: /dev/ttyACM0
+
+# 是否为从臂模式（接收 action 并执行），默认 true
+is_follower: false

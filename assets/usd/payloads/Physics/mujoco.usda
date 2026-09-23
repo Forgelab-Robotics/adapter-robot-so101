@@ -1,0 +1,353 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "MuJoCo USD Converter v0.2.0"
+    }
+    defaultPrim = "so101_new_calib"
+    doc = """Generated from Composed Stage of root layer /tmp/tmpdu7sekf4/so101_new_calib.usdc
+
+
+Generated from Composed Stage of root layer /tmp/mjcf_import_SO101_ntz1nb3w/usdex_SO101/so101_new_calib.usdc
+
+
+Generated from Composed Stage of root layer /tmp/mjcf_import_SO101_ntz1nb3w/temp_SO101/SO101.usd
+
+
+Generated from Composed Stage of root layer /home/exai/code/so101/assets/mjcf/SO101/payloads/base.usd
+"""
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    subLayers = [
+        @./physics.usda@
+    ]
+    upAxis = "Z"
+)
+
+over "so101_new_calib"
+{
+    over "Geometry"
+    {
+        over "base"
+        {
+            over "baseframe" (
+                prepend apiSchemas = ["MjcSiteAPI"]
+            )
+            {
+                uniform int mjc:group = 3
+            }
+
+            over "shoulder"
+            {
+                over "upper_arm"
+                {
+                    over "lower_arm"
+                    {
+                        over "wrist"
+                        {
+                            over "gripper"
+                            {
+                                over "gripperframe" (
+                                    prepend apiSchemas = ["MjcSiteAPI"]
+                                )
+                                {
+                                    uniform int mjc:group = 3
+                                }
+
+                                over "moving_jaw_so101_v1"
+                                {
+                                    over "gripper" (
+                                        delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+                                        prepend apiSchemas = ["MjcJointAPI"]
+                                    )
+                                    {
+                                        uniform double mjc:armature = 0.028
+                                        uniform double mjc:damping = 0.6
+                                        uniform double mjc:frictionloss = 0.052
+                                    }
+
+                                    over "moving_jaw_so101_v1"
+                                    {
+                                    }
+
+                                    over "moving_jaw_so101_v1_1"
+                                    {
+                                    }
+                                }
+
+                                over "wrist_roll" (
+                                    delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+                                    prepend apiSchemas = ["MjcJointAPI"]
+                                )
+                                {
+                                    uniform double mjc:armature = 0.028
+                                    uniform double mjc:damping = 0.6
+                                    uniform double mjc:frictionloss = 0.052
+                                }
+
+                                over "sts3215_03a_v1"
+                                {
+                                }
+
+                                over "sts3215_03a_v1_1"
+                                {
+                                }
+
+                                over "wrist_roll_follower_so101_v1"
+                                {
+                                }
+
+                                over "wrist_roll_follower_so101_v1_1"
+                                {
+                                }
+                            }
+
+                            over "wrist_flex" (
+                                delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+                                prepend apiSchemas = ["MjcJointAPI"]
+                            )
+                            {
+                                uniform double mjc:armature = 0.028
+                                uniform double mjc:damping = 0.6
+                                uniform double mjc:frictionloss = 0.052
+                            }
+
+                            over "sts3215_03a_no_horn_v1"
+                            {
+                            }
+
+                            over "sts3215_03a_no_horn_v1_1"
+                            {
+                            }
+
+                            over "wrist_roll_pitch_so101_v2"
+                            {
+                            }
+
+                            over "wrist_roll_pitch_so101_v2_1"
+                            {
+                            }
+                        }
+
+                        over "elbow_flex" (
+                            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+                            prepend apiSchemas = ["MjcJointAPI"]
+                        )
+                        {
+                            uniform double mjc:armature = 0.028
+                            uniform double mjc:damping = 0.6
+                            uniform double mjc:frictionloss = 0.052
+                        }
+
+                        over "under_arm_so101_v1"
+                        {
+                        }
+
+                        over "under_arm_so101_v1_1"
+                        {
+                        }
+
+                        over "motor_holder_so101_wrist_v1"
+                        {
+                        }
+
+                        over "motor_holder_so101_wrist_v1_1"
+                        {
+                        }
+
+                        over "sts3215_03a_v1"
+                        {
+                        }
+
+                        over "sts3215_03a_v1_1"
+                        {
+                        }
+                    }
+
+                    over "shoulder_lift" (
+                        delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+                        prepend apiSchemas = ["MjcJointAPI"]
+                    )
+                    {
+                        uniform double mjc:armature = 0.028
+                        uniform double mjc:damping = 0.6
+                        uniform double mjc:frictionloss = 0.052
+                    }
+
+                    over "sts3215_03a_v1"
+                    {
+                    }
+
+                    over "sts3215_03a_v1_1"
+                    {
+                    }
+
+                    over "upper_arm_so101_v1"
+                    {
+                    }
+
+                    over "upper_arm_so101_v1_1"
+                    {
+                    }
+                }
+
+                over "shoulder_pan" (
+                    delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+                    prepend apiSchemas = ["MjcJointAPI"]
+                )
+                {
+                    uniform double mjc:armature = 0.028
+                    uniform double mjc:damping = 0.6
+                    uniform double mjc:frictionloss = 0.052
+                }
+
+                over "sts3215_03a_v1"
+                {
+                }
+
+                over "sts3215_03a_v1_1"
+                {
+                }
+
+                over "motor_holder_so101_base_v1"
+                {
+                }
+
+                over "motor_holder_so101_base_v1_1"
+                {
+                }
+
+                over "rotation_pitch_so101_v1"
+                {
+                }
+
+                over "rotation_pitch_so101_v1_1"
+                {
+                }
+            }
+
+            over "PhysicsFixedJoint"
+            {
+            }
+
+            over "base_motor_holder_so101_v1"
+            {
+            }
+
+            over "base_so101_v2"
+            {
+            }
+
+            over "sts3215_03a_v1"
+            {
+            }
+
+            over "waveshare_mounting_plate_so101_v2"
+            {
+            }
+        }
+    }
+
+    over "Physics"
+    {
+        over "PhysicsMaterial" (
+            prepend apiSchemas = ["MjcMaterialAPI"]
+        )
+        {
+        }
+
+        def MjcActuator "shoulder_pan"
+        {
+            uniform double[] mjc:biasPrm = [0, -17.8, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:ctrlRange:max = 1.91986
+            uniform double mjc:ctrlRange:min = -1.91986
+            uniform double mjc:forceRange:max = 3.35
+            uniform double mjc:forceRange:min = -3.35
+            uniform double[] mjc:gainPrm = [17.8, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            custom rel mjc:target
+            prepend rel mjc:target = </so101_new_calib/Geometry/base/shoulder/shoulder_pan>
+        }
+
+        def MjcActuator "shoulder_lift"
+        {
+            uniform double[] mjc:biasPrm = [0, -17.8, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:ctrlRange:max = 1.74533
+            uniform double mjc:ctrlRange:min = -1.74533
+            uniform double mjc:forceRange:max = 3.35
+            uniform double mjc:forceRange:min = -3.35
+            uniform double[] mjc:gainPrm = [17.8, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            custom rel mjc:target
+            prepend rel mjc:target = </so101_new_calib/Geometry/base/shoulder/upper_arm/shoulder_lift>
+        }
+
+        def MjcActuator "elbow_flex"
+        {
+            uniform double[] mjc:biasPrm = [0, -17.8, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:ctrlRange:max = 1.69
+            uniform double mjc:ctrlRange:min = -1.69
+            uniform double mjc:forceRange:max = 3.35
+            uniform double mjc:forceRange:min = -3.35
+            uniform double[] mjc:gainPrm = [17.8, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            custom rel mjc:target
+            prepend rel mjc:target = </so101_new_calib/Geometry/base/shoulder/upper_arm/lower_arm/elbow_flex>
+        }
+
+        def MjcActuator "wrist_flex"
+        {
+            uniform double[] mjc:biasPrm = [0, -17.8, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:ctrlRange:max = 1.65806
+            uniform double mjc:ctrlRange:min = -1.65806
+            uniform double mjc:forceRange:max = 3.35
+            uniform double mjc:forceRange:min = -3.35
+            uniform double[] mjc:gainPrm = [17.8, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            custom rel mjc:target
+            prepend rel mjc:target = </so101_new_calib/Geometry/base/shoulder/upper_arm/lower_arm/wrist/wrist_flex>
+        }
+
+        def MjcActuator "wrist_roll"
+        {
+            uniform double[] mjc:biasPrm = [0, -17.8, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:ctrlRange:max = 2.84121
+            uniform double mjc:ctrlRange:min = -2.74385
+            uniform double mjc:forceRange:max = 3.35
+            uniform double mjc:forceRange:min = -3.35
+            uniform double[] mjc:gainPrm = [17.8, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            custom rel mjc:target
+            prepend rel mjc:target = </so101_new_calib/Geometry/base/shoulder/upper_arm/lower_arm/wrist/gripper/wrist_roll>
+        }
+
+        def MjcActuator "gripper"
+        {
+            uniform double[] mjc:biasPrm = [0, -17.8, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:ctrlRange:max = 1.74533
+            uniform double mjc:ctrlRange:min = -0.17453
+            uniform double mjc:forceRange:max = 3.35
+            uniform double mjc:forceRange:min = -3.35
+            uniform double[] mjc:gainPrm = [17.8, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            custom rel mjc:target
+            prepend rel mjc:target = </so101_new_calib/Geometry/base/shoulder/upper_arm/lower_arm/wrist/gripper/moving_jaw_so101_v1/gripper>
+        }
+    }
+
+    over "Materials"
+    {
+    }
+
+    over "VisualMaterials"
+    {
+    }
+}
+
+over "PhysicsScene" (
+    prepend apiSchemas = ["MjcSceneAPI"]
+)
+{
+    uniform token mjc:compiler:angle = "radian"
+    uniform bool mjc:flag:multiccd = 0
+}
+

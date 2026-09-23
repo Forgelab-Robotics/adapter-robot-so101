@@ -1,0 +1,17 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Logs and temporary execution outputs
+*.log
+examples/03_workflows/real_record/out
+examples/03_workflows/sim_record/out
+
+bin/

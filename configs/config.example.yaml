@@ -1,0 +1,11 @@
+# SO101 节点配置示例
+# 复制为 config.yaml 并根据实际环境修改
+
+# 串口路径，如 /dev/ttyUSB0、/dev/ttyACM0（可用 list-ports 查看）
+port: /dev/ttyACM0
+
+# 是否为从臂模式：true 接收 action 并执行，false 作为主臂回读状态
+is_follower: true
+
+# 是否输出调试日志
+debug: false

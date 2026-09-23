@@ -1,0 +1,9 @@
+# 从动臂 (Slave) 配置文件
+# 用于镜像动作，必须开启扭矩控制
+
+# 串口路径：根据实际连接的另一个端口修改 (如 /dev/ttyACM0)
+port: /dev/ttyACM0
+
+# 是否为从臂模式：设为 true
+# 这将触发 driver.py 中的 self.set_torque(True)，使电机上电锁死，并接收 action 输入
+is_follower: true

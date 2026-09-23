@@ -1,0 +1,852 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "MuJoCo USD Converter v0.2.0"
+    }
+    doc = """Generated from Composed Stage of root layer /tmp/tmpdu7sekf4/so101_new_calib.usdc
+
+
+Generated from Composed Stage of root layer /tmp/mjcf_import_SO101_ntz1nb3w/usdex_SO101/so101_new_calib.usdc
+
+
+Generated from Composed Stage of root layer /tmp/mjcf_import_SO101_ntz1nb3w/temp_SO101/SO101.usd
+
+
+Generated from Composed Stage of root layer /home/exai/code/so101/assets/mjcf/SO101/payloads/base.usd
+"""
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Scope "Instances"
+{
+    def Xform "base_motor_holder_so101_v1" (
+        prepend references = @./geometries.usd@</Geometries/base_motor_holder_so101_v1>
+    )
+    {
+        over "base_motor_holder_so101_v1" (
+            apiSchemas = ["PhysicsCollisionAPI", "NewtonCollisionAPI", "MjcCollisionAPI", "PhysicsMeshCollisionAPI", "NewtonMeshCollisionAPI", "PhysicsMassAPI", "MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/base_motor_holder_so101_v1/VisualMaterials/base_motor_holder_so101_v1_material>
+            custom rel material:binding:physics
+            prepend rel material:binding:physics = </so101_new_calib/Physics/PhysicsMaterial>
+            int mjc:group = 2
+            float newton:contactGap = 0 (
+                limits = {
+                    dictionary hard = {
+                        double minimum = 0
+                    }
+                }
+            )
+            token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 0
+            float physics:density = 1000
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "base_motor_holder_so101_v1_material" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/base_motor_holder_so101_v1_material>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "base_so101_v2" (
+        prepend references = @./geometries.usd@</Geometries/base_so101_v2>
+    )
+    {
+        over "base_so101_v2" (
+            apiSchemas = ["PhysicsCollisionAPI", "NewtonCollisionAPI", "MjcCollisionAPI", "PhysicsMeshCollisionAPI", "NewtonMeshCollisionAPI", "PhysicsMassAPI", "MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/base_so101_v2/VisualMaterials/base_so101_v2_material>
+            custom rel material:binding:physics
+            prepend rel material:binding:physics = </so101_new_calib/Physics/PhysicsMaterial>
+            int mjc:group = 2
+            float newton:contactGap = 0 (
+                limits = {
+                    dictionary hard = {
+                        double minimum = 0
+                    }
+                }
+            )
+            token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 0
+            float physics:density = 1000
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "base_so101_v2_material" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/base_motor_holder_so101_v1_material>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "sts3215_03a_v1" (
+        prepend references = @./geometries.usd@</Geometries/sts3215_03a_v1>
+    )
+    {
+        over "sts3215_03a_v1" (
+            apiSchemas = ["PhysicsCollisionAPI", "NewtonCollisionAPI", "MjcCollisionAPI", "PhysicsMeshCollisionAPI", "NewtonMeshCollisionAPI", "PhysicsMassAPI", "MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/sts3215_03a_v1/VisualMaterials/sts3215_03a_v1_material>
+            custom rel material:binding:physics
+            prepend rel material:binding:physics = </so101_new_calib/Physics/PhysicsMaterial>
+            int mjc:group = 2
+            float newton:contactGap = 0 (
+                limits = {
+                    dictionary hard = {
+                        double minimum = 0
+                    }
+                }
+            )
+            token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 0
+            float physics:density = 1000
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "sts3215_03a_v1_material" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/sts3215_03a_v1_material>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "sts3215_03a_v1_1" (
+        prepend references = @./geometries.usd@</Geometries/sts3215_03a_v1>
+    )
+    {
+        over "sts3215_03a_v1" (
+            apiSchemas = ["PhysicsCollisionAPI", "NewtonCollisionAPI", "MjcCollisionAPI", "PhysicsMeshCollisionAPI", "NewtonMeshCollisionAPI", "PhysicsMassAPI", "MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/sts3215_03a_v1_1/VisualMaterials/sts3215_03a_v1_material>
+            custom rel material:binding:physics
+            prepend rel material:binding:physics = </so101_new_calib/Physics/PhysicsMaterial>
+            int mjc:group = 3
+            float newton:contactGap = 0 (
+                limits = {
+                    dictionary hard = {
+                        double minimum = 0
+                    }
+                }
+            )
+            token physics:approximation = "convexHull"
+            float physics:density = 1000
+            token purpose = "guide"
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "sts3215_03a_v1_material" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/sts3215_03a_v1_material>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "waveshare_mounting_plate_so101_v2" (
+        prepend references = @./geometries.usd@</Geometries/waveshare_mounting_plate_so101_v2>
+    )
+    {
+        over "waveshare_mounting_plate_so101_v2" (
+            apiSchemas = ["PhysicsCollisionAPI", "NewtonCollisionAPI", "MjcCollisionAPI", "PhysicsMeshCollisionAPI", "NewtonMeshCollisionAPI", "PhysicsMassAPI", "MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/waveshare_mounting_plate_so101_v2/VisualMaterials/waveshare_mounting_plate_so101_v2_material>
+            custom rel material:binding:physics
+            prepend rel material:binding:physics = </so101_new_calib/Physics/PhysicsMaterial>
+            int mjc:group = 2
+            float newton:contactGap = 0 (
+                limits = {
+                    dictionary hard = {
+                        double minimum = 0
+                    }
+                }
+            )
+            token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 0
+            float physics:density = 1000
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "waveshare_mounting_plate_so101_v2_material" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/base_motor_holder_so101_v1_material>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "motor_holder_so101_base_v1" (
+        prepend references = @./geometries.usd@</Geometries/motor_holder_so101_base_v1>
+    )
+    {
+        over "motor_holder_so101_base_v1" (
+            apiSchemas = ["PhysicsCollisionAPI", "NewtonCollisionAPI", "MjcCollisionAPI", "PhysicsMeshCollisionAPI", "NewtonMeshCollisionAPI", "PhysicsMassAPI", "MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/motor_holder_so101_base_v1/VisualMaterials/motor_holder_so101_base_v1_material>
+            custom rel material:binding:physics
+            prepend rel material:binding:physics = </so101_new_calib/Physics/PhysicsMaterial>
+            int mjc:group = 2
+            float newton:contactGap = 0 (
+                limits = {
+                    dictionary hard = {
+                        double minimum = 0
+                    }
+                }
+            )
+            token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 0
+            float physics:density = 1000
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "motor_holder_so101_base_v1_material" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/base_motor_holder_so101_v1_material>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "motor_holder_so101_base_v1_1" (
+        prepend references = @./geometries.usd@</Geometries/motor_holder_so101_base_v1>
+    )
+    {
+        over "motor_holder_so101_base_v1" (
+            apiSchemas = ["PhysicsCollisionAPI", "NewtonCollisionAPI", "MjcCollisionAPI", "PhysicsMeshCollisionAPI", "NewtonMeshCollisionAPI", "PhysicsMassAPI", "MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/motor_holder_so101_base_v1_1/VisualMaterials/motor_holder_so101_base_v1_material>
+            custom rel material:binding:physics
+            prepend rel material:binding:physics = </so101_new_calib/Physics/PhysicsMaterial>
+            int mjc:group = 3
+            float newton:contactGap = 0 (
+                limits = {
+                    dictionary hard = {
+                        double minimum = 0
+                    }
+                }
+            )
+            token physics:approximation = "convexHull"
+            float physics:density = 1000
+            token purpose = "guide"
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "motor_holder_so101_base_v1_material" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/base_motor_holder_so101_v1_material>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "rotation_pitch_so101_v1" (
+        prepend references = @./geometries.usd@</Geometries/rotation_pitch_so101_v1>
+    )
+    {
+        over "rotation_pitch_so101_v1" (
+            apiSchemas = ["PhysicsCollisionAPI", "NewtonCollisionAPI", "MjcCollisionAPI", "PhysicsMeshCollisionAPI", "NewtonMeshCollisionAPI", "PhysicsMassAPI", "MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/rotation_pitch_so101_v1/VisualMaterials/rotation_pitch_so101_v1_material>
+            custom rel material:binding:physics
+            prepend rel material:binding:physics = </so101_new_calib/Physics/PhysicsMaterial>
+            int mjc:group = 2
+            float newton:contactGap = 0 (
+                limits = {
+                    dictionary hard = {
+                        double minimum = 0
+                    }
+                }
+            )
+            token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 0
+            float physics:density = 1000
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "rotation_pitch_so101_v1_material" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/base_motor_holder_so101_v1_material>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "rotation_pitch_so101_v1_1" (
+        prepend references = @./geometries.usd@</Geometries/rotation_pitch_so101_v1>
+    )
+    {
+        over "rotation_pitch_so101_v1" (
+            apiSchemas = ["PhysicsCollisionAPI", "NewtonCollisionAPI", "MjcCollisionAPI", "PhysicsMeshCollisionAPI", "NewtonMeshCollisionAPI", "PhysicsMassAPI", "MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/rotation_pitch_so101_v1_1/VisualMaterials/rotation_pitch_so101_v1_material>
+            custom rel material:binding:physics
+            prepend rel material:binding:physics = </so101_new_calib/Physics/PhysicsMaterial>
+            int mjc:group = 3
+            float newton:contactGap = 0 (
+                limits = {
+                    dictionary hard = {
+                        double minimum = 0
+                    }
+                }
+            )
+            token physics:approximation = "convexHull"
+            float physics:density = 1000
+            token purpose = "guide"
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "rotation_pitch_so101_v1_material" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/base_motor_holder_so101_v1_material>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "upper_arm_so101_v1" (
+        prepend references = @./geometries.usd@</Geometries/upper_arm_so101_v1>
+    )
+    {
+        over "upper_arm_so101_v1" (
+            apiSchemas = ["PhysicsCollisionAPI", "NewtonCollisionAPI", "MjcCollisionAPI", "PhysicsMeshCollisionAPI", "NewtonMeshCollisionAPI", "PhysicsMassAPI", "MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/upper_arm_so101_v1/VisualMaterials/upper_arm_so101_v1_material>
+            custom rel material:binding:physics
+            prepend rel material:binding:physics = </so101_new_calib/Physics/PhysicsMaterial>
+            int mjc:group = 2
+            float newton:contactGap = 0 (
+                limits = {
+                    dictionary hard = {
+                        double minimum = 0
+                    }
+                }
+            )
+            token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 0
+            float physics:density = 1000
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "upper_arm_so101_v1_material" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/base_motor_holder_so101_v1_material>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "upper_arm_so101_v1_1" (
+        prepend references = @./geometries.usd@</Geometries/upper_arm_so101_v1>
+    )
+    {
+        over "upper_arm_so101_v1" (
+            apiSchemas = ["PhysicsCollisionAPI", "NewtonCollisionAPI", "MjcCollisionAPI", "PhysicsMeshCollisionAPI", "NewtonMeshCollisionAPI", "PhysicsMassAPI", "MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/upper_arm_so101_v1_1/VisualMaterials/upper_arm_so101_v1_material>
+            custom rel material:binding:physics
+            prepend rel material:binding:physics = </so101_new_calib/Physics/PhysicsMaterial>
+            int mjc:group = 3
+            float newton:contactGap = 0 (
+                limits = {
+                    dictionary hard = {
+                        double minimum = 0
+                    }
+                }
+            )
+            token physics:approximation = "convexHull"
+            float physics:density = 1000
+            token purpose = "guide"
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "upper_arm_so101_v1_material" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/base_motor_holder_so101_v1_material>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "under_arm_so101_v1" (
+        prepend references = @./geometries.usd@</Geometries/under_arm_so101_v1>
+    )
+    {
+        over "under_arm_so101_v1" (
+            apiSchemas = ["PhysicsCollisionAPI", "NewtonCollisionAPI", "MjcCollisionAPI", "PhysicsMeshCollisionAPI", "NewtonMeshCollisionAPI", "PhysicsMassAPI", "MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/under_arm_so101_v1/VisualMaterials/under_arm_so101_v1_material>
+            custom rel material:binding:physics
+            prepend rel material:binding:physics = </so101_new_calib/Physics/PhysicsMaterial>
+            int mjc:group = 2
+            float newton:contactGap = 0 (
+                limits = {
+                    dictionary hard = {
+                        double minimum = 0
+                    }
+                }
+            )
+            token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 0
+            float physics:density = 1000
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "under_arm_so101_v1_material" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/base_motor_holder_so101_v1_material>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "under_arm_so101_v1_1" (
+        prepend references = @./geometries.usd@</Geometries/under_arm_so101_v1>
+    )
+    {
+        over "under_arm_so101_v1" (
+            apiSchemas = ["PhysicsCollisionAPI", "NewtonCollisionAPI", "MjcCollisionAPI", "PhysicsMeshCollisionAPI", "NewtonMeshCollisionAPI", "PhysicsMassAPI", "MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/under_arm_so101_v1_1/VisualMaterials/under_arm_so101_v1_material>
+            custom rel material:binding:physics
+            prepend rel material:binding:physics = </so101_new_calib/Physics/PhysicsMaterial>
+            int mjc:group = 3
+            float newton:contactGap = 0 (
+                limits = {
+                    dictionary hard = {
+                        double minimum = 0
+                    }
+                }
+            )
+            token physics:approximation = "convexHull"
+            float physics:density = 1000
+            token purpose = "guide"
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "under_arm_so101_v1_material" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/base_motor_holder_so101_v1_material>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "motor_holder_so101_wrist_v1" (
+        prepend references = @./geometries.usd@</Geometries/motor_holder_so101_wrist_v1>
+    )
+    {
+        over "motor_holder_so101_wrist_v1" (
+            apiSchemas = ["PhysicsCollisionAPI", "NewtonCollisionAPI", "MjcCollisionAPI", "PhysicsMeshCollisionAPI", "NewtonMeshCollisionAPI", "PhysicsMassAPI", "MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/motor_holder_so101_wrist_v1/VisualMaterials/motor_holder_so101_wrist_v1_material>
+            custom rel material:binding:physics
+            prepend rel material:binding:physics = </so101_new_calib/Physics/PhysicsMaterial>
+            int mjc:group = 2
+            float newton:contactGap = 0 (
+                limits = {
+                    dictionary hard = {
+                        double minimum = 0
+                    }
+                }
+            )
+            token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 0
+            float physics:density = 1000
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "motor_holder_so101_wrist_v1_material" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/base_motor_holder_so101_v1_material>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "motor_holder_so101_wrist_v1_1" (
+        prepend references = @./geometries.usd@</Geometries/motor_holder_so101_wrist_v1>
+    )
+    {
+        over "motor_holder_so101_wrist_v1" (
+            apiSchemas = ["PhysicsCollisionAPI", "NewtonCollisionAPI", "MjcCollisionAPI", "PhysicsMeshCollisionAPI", "NewtonMeshCollisionAPI", "PhysicsMassAPI", "MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/motor_holder_so101_wrist_v1_1/VisualMaterials/motor_holder_so101_wrist_v1_material>
+            custom rel material:binding:physics
+            prepend rel material:binding:physics = </so101_new_calib/Physics/PhysicsMaterial>
+            int mjc:group = 3
+            float newton:contactGap = 0 (
+                limits = {
+                    dictionary hard = {
+                        double minimum = 0
+                    }
+                }
+            )
+            token physics:approximation = "convexHull"
+            float physics:density = 1000
+            token purpose = "guide"
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "motor_holder_so101_wrist_v1_material" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/base_motor_holder_so101_v1_material>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "sts3215_03a_no_horn_v1" (
+        prepend references = @./geometries.usd@</Geometries/sts3215_03a_no_horn_v1>
+    )
+    {
+        over "sts3215_03a_no_horn_v1" (
+            apiSchemas = ["PhysicsCollisionAPI", "NewtonCollisionAPI", "MjcCollisionAPI", "PhysicsMeshCollisionAPI", "NewtonMeshCollisionAPI", "PhysicsMassAPI", "MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/sts3215_03a_no_horn_v1/VisualMaterials/sts3215_03a_no_horn_v1_material>
+            custom rel material:binding:physics
+            prepend rel material:binding:physics = </so101_new_calib/Physics/PhysicsMaterial>
+            int mjc:group = 2
+            float newton:contactGap = 0 (
+                limits = {
+                    dictionary hard = {
+                        double minimum = 0
+                    }
+                }
+            )
+            token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 0
+            float physics:density = 1000
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "sts3215_03a_no_horn_v1_material" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/sts3215_03a_v1_material>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "sts3215_03a_no_horn_v1_1" (
+        prepend references = @./geometries.usd@</Geometries/sts3215_03a_no_horn_v1>
+    )
+    {
+        over "sts3215_03a_no_horn_v1" (
+            apiSchemas = ["PhysicsCollisionAPI", "NewtonCollisionAPI", "MjcCollisionAPI", "PhysicsMeshCollisionAPI", "NewtonMeshCollisionAPI", "PhysicsMassAPI", "MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/sts3215_03a_no_horn_v1_1/VisualMaterials/sts3215_03a_no_horn_v1_material>
+            custom rel material:binding:physics
+            prepend rel material:binding:physics = </so101_new_calib/Physics/PhysicsMaterial>
+            int mjc:group = 3
+            float newton:contactGap = 0 (
+                limits = {
+                    dictionary hard = {
+                        double minimum = 0
+                    }
+                }
+            )
+            token physics:approximation = "convexHull"
+            float physics:density = 1000
+            token purpose = "guide"
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "sts3215_03a_no_horn_v1_material" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/sts3215_03a_v1_material>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "wrist_roll_pitch_so101_v2" (
+        prepend references = @./geometries.usd@</Geometries/wrist_roll_pitch_so101_v2>
+    )
+    {
+        over "wrist_roll_pitch_so101_v2" (
+            apiSchemas = ["PhysicsCollisionAPI", "NewtonCollisionAPI", "MjcCollisionAPI", "PhysicsMeshCollisionAPI", "NewtonMeshCollisionAPI", "PhysicsMassAPI", "MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/wrist_roll_pitch_so101_v2/VisualMaterials/wrist_roll_pitch_so101_v2_material>
+            custom rel material:binding:physics
+            prepend rel material:binding:physics = </so101_new_calib/Physics/PhysicsMaterial>
+            int mjc:group = 2
+            float newton:contactGap = 0 (
+                limits = {
+                    dictionary hard = {
+                        double minimum = 0
+                    }
+                }
+            )
+            token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 0
+            float physics:density = 1000
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "wrist_roll_pitch_so101_v2_material" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/base_motor_holder_so101_v1_material>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "wrist_roll_pitch_so101_v2_1" (
+        prepend references = @./geometries.usd@</Geometries/wrist_roll_pitch_so101_v2>
+    )
+    {
+        over "wrist_roll_pitch_so101_v2" (
+            apiSchemas = ["PhysicsCollisionAPI", "NewtonCollisionAPI", "MjcCollisionAPI", "PhysicsMeshCollisionAPI", "NewtonMeshCollisionAPI", "PhysicsMassAPI", "MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/wrist_roll_pitch_so101_v2_1/VisualMaterials/wrist_roll_pitch_so101_v2_material>
+            custom rel material:binding:physics
+            prepend rel material:binding:physics = </so101_new_calib/Physics/PhysicsMaterial>
+            int mjc:group = 3
+            float newton:contactGap = 0 (
+                limits = {
+                    dictionary hard = {
+                        double minimum = 0
+                    }
+                }
+            )
+            token physics:approximation = "convexHull"
+            float physics:density = 1000
+            token purpose = "guide"
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "wrist_roll_pitch_so101_v2_material" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/base_motor_holder_so101_v1_material>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "wrist_roll_follower_so101_v1" (
+        prepend references = @./geometries.usd@</Geometries/wrist_roll_follower_so101_v1>
+    )
+    {
+        over "wrist_roll_follower_so101_v1" (
+            apiSchemas = ["PhysicsCollisionAPI", "NewtonCollisionAPI", "MjcCollisionAPI", "PhysicsMeshCollisionAPI", "NewtonMeshCollisionAPI", "PhysicsMassAPI", "MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/wrist_roll_follower_so101_v1/VisualMaterials/wrist_roll_follower_so101_v1_material>
+            custom rel material:binding:physics
+            prepend rel material:binding:physics = </so101_new_calib/Physics/PhysicsMaterial>
+            int mjc:group = 2
+            float newton:contactGap = 0 (
+                limits = {
+                    dictionary hard = {
+                        double minimum = 0
+                    }
+                }
+            )
+            token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 0
+            float physics:density = 1000
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "wrist_roll_follower_so101_v1_material" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/base_motor_holder_so101_v1_material>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "wrist_roll_follower_so101_v1_1" (
+        prepend references = @./geometries.usd@</Geometries/wrist_roll_follower_so101_v1>
+    )
+    {
+        over "wrist_roll_follower_so101_v1" (
+            apiSchemas = ["PhysicsCollisionAPI", "NewtonCollisionAPI", "MjcCollisionAPI", "PhysicsMeshCollisionAPI", "NewtonMeshCollisionAPI", "PhysicsMassAPI", "MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/wrist_roll_follower_so101_v1_1/VisualMaterials/wrist_roll_follower_so101_v1_material>
+            custom rel material:binding:physics
+            prepend rel material:binding:physics = </so101_new_calib/Physics/PhysicsMaterial>
+            int mjc:group = 3
+            float newton:contactGap = 0 (
+                limits = {
+                    dictionary hard = {
+                        double minimum = 0
+                    }
+                }
+            )
+            token physics:approximation = "convexHull"
+            float physics:density = 1000
+            token purpose = "guide"
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "wrist_roll_follower_so101_v1_material" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/base_motor_holder_so101_v1_material>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "moving_jaw_so101_v1" (
+        prepend references = @./geometries.usd@</Geometries/moving_jaw_so101_v1>
+    )
+    {
+        over "moving_jaw_so101_v1" (
+            apiSchemas = ["PhysicsCollisionAPI", "NewtonCollisionAPI", "MjcCollisionAPI", "PhysicsMeshCollisionAPI", "NewtonMeshCollisionAPI", "PhysicsMassAPI", "MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/moving_jaw_so101_v1/VisualMaterials/moving_jaw_so101_v1_material>
+            custom rel material:binding:physics
+            prepend rel material:binding:physics = </so101_new_calib/Physics/PhysicsMaterial>
+            int mjc:group = 2
+            float newton:contactGap = 0 (
+                limits = {
+                    dictionary hard = {
+                        double minimum = 0
+                    }
+                }
+            )
+            token physics:approximation = "convexHull"
+            bool physics:collisionEnabled = 0
+            float physics:density = 1000
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "moving_jaw_so101_v1_material" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/base_motor_holder_so101_v1_material>
+            )
+            {
+            }
+        }
+    }
+
+    def Xform "moving_jaw_so101_v1_1" (
+        prepend references = @./geometries.usd@</Geometries/moving_jaw_so101_v1>
+    )
+    {
+        over "moving_jaw_so101_v1" (
+            apiSchemas = ["PhysicsCollisionAPI", "NewtonCollisionAPI", "MjcCollisionAPI", "PhysicsMeshCollisionAPI", "NewtonMeshCollisionAPI", "PhysicsMassAPI", "MaterialBindingAPI"]
+        )
+        {
+            custom rel material:binding
+            prepend rel material:binding = </Instances/moving_jaw_so101_v1_1/VisualMaterials/moving_jaw_so101_v1_material>
+            custom rel material:binding:physics
+            prepend rel material:binding:physics = </so101_new_calib/Physics/PhysicsMaterial>
+            int mjc:group = 3
+            float newton:contactGap = 0 (
+                limits = {
+                    dictionary hard = {
+                        double minimum = 0
+                    }
+                }
+            )
+            token physics:approximation = "convexHull"
+            float physics:density = 1000
+            token purpose = "guide"
+        }
+
+        def Scope "VisualMaterials"
+        {
+            def Material "moving_jaw_so101_v1_material" (
+                instanceable = true
+                prepend references = @./materials.usda@</Materials/base_motor_holder_so101_v1_material>
+            )
+            {
+            }
+        }
+    }
+}
+
