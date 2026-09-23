@@ -12,7 +12,7 @@ Generated from Composed Stage of root layer /tmp/mjcf_import_SO101_ntz1nb3w/usde
 Generated from Composed Stage of root layer /tmp/mjcf_import_SO101_ntz1nb3w/temp_SO101/SO101.usd
 
 
-Generated from Composed Stage of root layer /home/exai/code/so101/assets/mjcf/SO101/payloads/base.usd
+Generated from Composed Stage of root layer assets/mjcf/SO101/payloads/base.usd
 """
     kilogramsPerUnit = 1
     metersPerUnit = 1
